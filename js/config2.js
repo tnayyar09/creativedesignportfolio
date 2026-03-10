@@ -106,11 +106,11 @@ const CATEGORIES = [
 
 const designData = {
     "website-ui": [
-        { 
-          url: "https://lh3.googleusercontent.com/d/1lIJll3uiB7PxTvVylXdsQjzTBMNBUgry", 
-            type: "image",
-            projectUrl: "#"  // ✅ Redirect URL
-       },
+    //    { 
+       //   url: "https://lh3.googleusercontent.com/d/1lIJll3uiB7PxTvVylXdsQjzTBMNBUgry", 
+        //    type: "image",
+        //    projectUrl: "#"  // ✅ Redirect URL
+      // },
         { 
             url: "https://lh3.googleusercontent.com/d/1kkKQHtt1TJMH4tXaFq6LhwCmtlxIkWkr", 
             type: "image",
