@@ -216,8 +216,76 @@ function getVideoThumbnail(videoUrl) {
 }
 
 // ============================================
-//  GALLERY RENDERING
+//  GALLERY RENDERING - MAIN FUNCTION
 // ============================================
+
+// ============================================
+//  PAGE LOADER
+// ============================================
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.page-loader');
+    if (loader) {
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            loader.style.visibility = 'hidden';
+            setTimeout(() => loader.remove(), 500);
+        }, 800);
+    }
+});
+
+// ============================================
+//  NAVIGATION SETUP
+// ============================================
+function setupNavigation() {
+    const navMenu = document.getElementById('navMenu');
+    const hamburger = document.getElementById('hamburger');
+    const overlay = document.getElementById('mobileOverlay');
+
+    if (!navMenu || typeof navMenuItems === 'undefined') return;
+
+    navMenuItems.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'nav-item';
+
+        if (item.dropdown) {
+            li.classList.add('dropdown');
+            li.innerHTML = `
+                <a href="#" class="nav-link dropdown-toggle">
+                    ${item.label} ▾
+                </a>
+                <ul class="dropdown-menu">
+                    ${item.dropdown.map(sub => `
+                        <li><a href="${sub.href}" class="dropdown-link">${sub.label}</a></li>
+                    `).join('')}
+                </ul>
+            `;
+            const toggle = li.querySelector('.dropdown-toggle');
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                li.classList.toggle('active');
+            });
+        } else {
+            li.innerHTML = `<a href="${item.href}" class="nav-link">${item.label}</a>`;
+        }
+        navMenu.appendChild(li);
+    });
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            if (overlay) overlay.classList.toggle('active');
+        });
+    }
+
+    if (overlay) {
+        overlay.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    }
+}
 function renderGallery() {
     const galleryGrid = document.getElementById('galleryGrid');
     if (!galleryGrid) return;
@@ -227,7 +295,7 @@ function renderGallery() {
 
     if (!designs || designs.length === 0) {
         galleryGrid.innerHTML = `
-            <div style="grid-column: 1/-1; text-align:center; padding:60px 20px;">
+            <div style="grid-column:1/-1; text-align:center; padding:60px 20px;">
                 <div style="font-size:80px; margin-bottom:20px;">📭</div>
                 <h2 style="color:#fff;">No Designs Yet</h2>
                 <p style="color:#888;">Coming soon!</p>
@@ -236,67 +304,125 @@ function renderGallery() {
         return;
     }
 
-    // ✅ Loop through designs
     designs.forEach((item, index) => {
-        const card = document.createElement('div');
-        card.className = 'design-card';
-        card.style.animationDelay = `${index * 0.1}s`;
 
-        // ========== IMAGE ==========
+        // ========== IMAGE TYPE ==========
         if (item.type === "image") {
-            card.innerHTML = `
-                <div class="card-image-container">
-                    <img 
-                        src="${item.url}" 
-                        alt="${item.title || 'Design'}" 
-                        class="card-image"
-                        loading="lazy"
-                        onerror="this.src='https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Image+Not+Found'"
-                    >
-                </div>
-                ${item.projectUrl ? `
-                    <div class="card-bottom">
-                        <a href="${item.projectUrl}" target="_blank" class="btn-visit-project">
-                            🔗 Visit Project
+
+            const card = document.createElement('div');
+            card.className = 'design-card';
+            card.style.animationDelay = index * 0.1 + 's';
+
+            // Image wrapper
+            const imgWrap = document.createElement('div');
+            imgWrap.className = 'card-image-wrap';
+
+            // Image
+            const img = document.createElement('img');
+            img.src = item.url;
+            img.alt = item.title || 'Design';
+            img.className = 'card-img';
+            img.loading = 'lazy';
+            img.onerror = function () {
+                this.src = 'https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Image+Not+Found';
+            };
+
+            imgWrap.appendChild(img);
+
+            // ✅ Agar projectUrl hai toh OVERLAY + BUTTON dikhao
+            if (item.projectUrl) {
+
+                const overlay = document.createElement('div');
+                overlay.className = 'card-hover-overlay';
+                overlay.innerHTML = `
+                    <div class="overlay-inner">
+                        <div class="overlay-icon">🔗</div>
+                        <a href="${item.projectUrl}" target="_blank" class="overlay-btn">
+                            Visit Site →
                         </a>
                     </div>
-                ` : ''}
-            `;
+                `;
+
+                imgWrap.appendChild(overlay);
+
+                // ✅ Puri image click pe bhi redirect
+                imgWrap.style.cursor = 'pointer';
+                imgWrap.addEventListener('click', (e) => {
+                    // Agar button pe click nahi kiya toh bhi redirect
+                    if (!e.target.classList.contains('overlay-btn')) {
+                        window.open(item.projectUrl, '_blank');
+                    }
+                });
+            }
+
+            card.appendChild(imgWrap);
+
+            // ✅ Bottom Visit Button (hamesha dikhega)
+            if (item.projectUrl) {
+                const bottomBar = document.createElement('div');
+                bottomBar.className = 'card-bottom-bar';
+                bottomBar.innerHTML = `
+                    <a href="${item.projectUrl}" target="_blank" class="btn-visit">
+                        🔗 Visit Live Site
+                    </a>
+                `;
+                card.appendChild(bottomBar);
+            }
+
+            galleryGrid.appendChild(card);
         }
 
-        // ========== VIDEO ==========
+        // ========== VIDEO TYPE ==========
         else if (item.type === "video") {
+
+            const card = document.createElement('div');
+            card.className = 'design-card';
+            card.style.animationDelay = index * 0.1 + 's';
+
             card.innerHTML = `
-                <div class="card-video-container">
+                <div class="card-video-wrap">
                     <iframe 
                         src="${item.url}" 
                         width="100%" 
                         height="300" 
-                        frameborder="0"
-                        allow="autoplay; encrypted-media"
-                        allowfullscreen
-                        class="card-video">
+                        frameborder="0" 
+                        allow="autoplay; encrypted-media" 
+                        allowfullscreen>
                     </iframe>
                 </div>
             `;
+
+            galleryGrid.appendChild(card);
         }
 
-        // ========== INSTAGRAM ==========
+        // ========== INSTAGRAM TYPE ==========
         else if (item.type === "instagram") {
+
+            const card = document.createElement('div');
+            card.className = 'design-card';
+            card.style.animationDelay = index * 0.1 + 's';
+
             card.innerHTML = `
-                <div class="card-instagram-container">
+                <div class="card-insta-wrap">
                     <iframe 
                         src="${item.url}" 
                         width="100%" 
                         height="480" 
-                        frameborder="0"
-                        scrolling="no"
-                        class="card-instagram">
+                        frameborder="0" 
+                        scrolling="no">
                     </iframe>
                 </div>
             `;
-        }
 
-        galleryGrid.appendChild(card);
+            galleryGrid.appendChild(card);
+        }
     });
 }
+
+// ============================================
+//  INIT
+// ============================================
+document.addEventListener('DOMContentLoaded', () => {
+    setupNavigation();
+    renderGallery();
+});
