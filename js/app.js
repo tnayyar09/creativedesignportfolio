@@ -214,3 +214,89 @@ function getVideoThumbnail(videoUrl) {
     // Fallback placeholder
     return 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%231a1a2e%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23666%22 font-size=%2240%22 x=%22150%22 y=%22210%22%3E🎬%3C/text%3E%3C/svg%3E';
 }
+
+// ============================================
+//  GALLERY RENDERING
+// ============================================
+function renderGallery() {
+    const galleryGrid = document.getElementById('galleryGrid');
+    if (!galleryGrid) return;
+
+    const category = galleryGrid.getAttribute('data-category');
+    const designs = designData[category];
+
+    if (!designs || designs.length === 0) {
+        galleryGrid.innerHTML = `
+            <div style="grid-column: 1/-1; text-align:center; padding:60px 20px;">
+                <div style="font-size:80px; margin-bottom:20px;">📭</div>
+                <h2 style="color:#fff;">No Designs Yet</h2>
+                <p style="color:#888;">Coming soon!</p>
+            </div>
+        `;
+        return;
+    }
+
+    // ✅ Loop through designs
+    designs.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'design-card';
+        card.style.animationDelay = `${index * 0.1}s`;
+
+        // ========== IMAGE ==========
+        if (item.type === "image") {
+            card.innerHTML = `
+                <div class="card-image-container">
+                    <img 
+                        src="${item.url}" 
+                        alt="${item.title || 'Design'}" 
+                        class="card-image"
+                        loading="lazy"
+                        onerror="this.src='https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Image+Not+Found'"
+                    >
+                </div>
+                ${item.projectUrl ? `
+                    <div class="card-bottom">
+                        <a href="${item.projectUrl}" target="_blank" class="btn-visit-project">
+                            🔗 Visit Project
+                        </a>
+                    </div>
+                ` : ''}
+            `;
+        }
+
+        // ========== VIDEO ==========
+        else if (item.type === "video") {
+            card.innerHTML = `
+                <div class="card-video-container">
+                    <iframe 
+                        src="${item.url}" 
+                        width="100%" 
+                        height="300" 
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        class="card-video">
+                    </iframe>
+                </div>
+            `;
+        }
+
+        // ========== INSTAGRAM ==========
+        else if (item.type === "instagram") {
+            card.innerHTML = `
+                <div class="card-instagram-container">
+                    <iframe 
+                        src="${item.url}" 
+                        width="100%" 
+                        height="480" 
+                        frameborder="0"
+                        scrolling="no"
+                        class="card-instagram">
+                    </iframe>
+                </div>
+            `;
+        }
+
+        galleryGrid.appendChild(card);
+    });
+}

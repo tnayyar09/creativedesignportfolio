@@ -263,10 +263,22 @@ const CREATIVE_IMAGES = {
     ],
 
     // UI/UX
-    "website-ui": [
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_WEB_1", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_WEB_2", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_WEB_3", type: "image" }
+"website-ui": [
+        { 
+            url: "https://lh3.googleusercontent.com/d/1yz1-mOVPjwaKdWhtZC-MiuYVW84PN92N", 
+            type: "image",
+            projectUrl: "https://tnayyar09.github.io/my-html-project/Clinic-1.0.0/"  // ✅ Redirect URL
+        },
+        { 
+            url: "https://lh3.googleusercontent.com/d/ANOTHER_IMAGE_ID", 
+            type: "image",
+            projectUrl: "https://another-project.com"
+        },
+        { 
+            url: "https://lh3.googleusercontent.com/d/ANOTHER_IMAGE_ID_2", 
+            type: "image",
+            projectUrl: "https://third-project.com"
+        }
     ],
 
     "app-ui": [
