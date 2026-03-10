@@ -106,11 +106,11 @@ const CATEGORIES = [
 
 const designData = {
     "website-ui": [
-     //   { 
-         //   url: "https://lh3.googleusercontent.com/d/1yz1-mOVPjwaKdWhtZC-MiuYVW84PN92N", 
-          //  type: "image",
-          //  projectUrl: "https://tnayyar09.github.io/my-html-project/Clinic-1.0.0/"  // ✅ Redirect URL
-    //    },
+        { 
+          url: "https://lh3.googleusercontent.com/d/1lIJll3uiB7PxTvVylXdsQjzTBMNBUgry", 
+            type: "image",
+            projectUrl: "#"  // ✅ Redirect URL
+       },
         { 
             url: "https://lh3.googleusercontent.com/d/1kkKQHtt1TJMH4tXaFq6LhwCmtlxIkWkr", 
             type: "image",
