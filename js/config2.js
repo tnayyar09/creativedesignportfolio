@@ -109,17 +109,17 @@ const designData = {
         { 
             url: "https://lh3.googleusercontent.com/d/1yz1-mOVPjwaKdWhtZC-MiuYVW84PN92N", 
             type: "image",
-            projectUrl: "https://your-live-website.com"  // ✅ Redirect URL
+            projectUrl: "https://tnayyar09.github.io/my-html-project/Clinic-1.0.0/"  // ✅ Redirect URL
         },
         { 
-            url: "https://lh3.googleusercontent.com/d/ANOTHER_IMAGE_ID", 
+            url: "https://lh3.googleusercontent.com/d/1kkKQHtt1TJMH4tXaFq6LhwCmtlxIkWkr", 
             type: "image",
-            projectUrl: "https://another-project.com"
+            projectUrl: "https://tnayyar09.github.io/3drealweb/3d"
         },
         { 
-            url: "https://lh3.googleusercontent.com/d/ANOTHER_IMAGE_ID_2", 
+            url: "https://lh3.googleusercontent.com/d/17pyQraF87h5yqrINOV59jFTfQrxMT3fP", 
             type: "image",
-            projectUrl: "https://third-project.com"
+            projectUrl: "https://tnayyar09.github.io/luxe3dwebsite/"
         }
     ],
 };
