@@ -125,6 +125,11 @@ const designData = {
             url: "https://lh3.googleusercontent.com/d/17pyQraF87h5yqrINOV59jFTfQrxMT3fP", 
             type: "image",
             projectUrl: "https://tnayyar09.github.io/luxe3dwebsite/"
+        },
+	    { 
+            url: "https://lh3.googleusercontent.com/d/1I4-_DCmskUt5snsJ4o2816MO-sk3pLGb", 
+            type: "image",
+            projectUrl: https://tnayyar09.github.io/salon/"
         }
     ],
 };
