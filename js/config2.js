@@ -130,6 +130,11 @@ const designData = {
             url: "https://lh3.googleusercontent.com/d/1I4-_DCmskUt5snsJ4o2816MO-sk3pLGb", 
             type: "image",
             projectUrl: "https://tnayyar09.github.io/salon/"
+        },
+		{ 
+            url: "https://lh3.googleusercontent.com/d/1rAQAxrXe9cm1fjZQlLuohOeykYPizmk6", 
+            type: "image",
+            projectUrl: "https://tnayyar09.github.io/bakery/index.html"
         }
     ],
 };
