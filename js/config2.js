@@ -117,11 +117,6 @@ const designData = {
             projectUrl: "https://tnayyar09.github.io/3drealweb/3d"
         },
 		{ 
-            url: "https://lh3.googleusercontent.com/d/1I4-_DCmskUt5snsJ4o2816MO-sk3pLGb", 
-            type: "image",
-            projectUrl: https://tnayyar09.github.io/salon/"
-        },
-		{ 
             url: "https://lh3.googleusercontent.com/d/1ZWaP54RhYWeTV94_MW4M6Ec41w8sSeVI", 
             type: "image",
             projectUrl: "https://tnayyar09.github.io/roccos/"
