@@ -122,7 +122,7 @@ const designData = {
             projectUrl: "https://tnayyar09.github.io/roccos/"
         },
         { 
-            url: "https://lh3.googleusercontent.com/d/17pyQraF87h5yqrINOV59jFTfQrxMT3fP", 
+            url: "https://lh3.googleusercontent.com/d/1GRH60EcZ-T31Wb4SdGXt74jXlXR83PUI", 
             type: "image",
             projectUrl: "https://tnayyar09.github.io/luxe3dwebsite/"
         }
