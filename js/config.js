@@ -23,17 +23,17 @@ const CATEGORIES = [
 		    { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
         ]
     },
-   // {
-      //  id: "social-media",
-      //  name: "Social Media",
-       // icon: "📱",
-       // subcategories: [
-           // { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" }
+    {
+        id: "social-media",
+        name: "Social Media",
+        icon: "📱",
+        subcategories: [
+            { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" }
          //   { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" },
           //  { id: "banner-ads", name: "Banner Ads", page: "pages/banner-ads.html" },
           //  { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
-       // ]
-  //  },
+        ]
+   },
    // {
       //  id: "print-design",
       //  name: "Print Design",
@@ -161,16 +161,8 @@ const CREATIVE_IMAGES = {
 { url: "https://lh3.googleusercontent.com/d/1gP47ydHB8o1YC-tL4SCxp4ACStqFyhGK", type: "image" },
 { url: "https://lh3.googleusercontent.com/d/1m1a2YAs09fD2jipwVXz-lOZ0IAIJBLkw", type: "image" },
 { url: "https://lh3.googleusercontent.com/d/1Yxu295zqTfTWz_C5O2FAi2r8P_vINGf7", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1mnecSsj3w2kXpKHAW516TDqWV8fgaurz", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/19o6L0N032HVjgGTVzuJkSp-No07fMgvf", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1kymmkV7yVA5eGyI0cmAZNS6y1qZ2lMSr", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1mA7bwfcnT_RF7Iy0f0rCv9fUNgTCbQOJ", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1RHd8jnBgHZ2PmkyDPMYDpXhvHiwXK-L9", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1ecSiPXZwm-4xE-ICkilmV3pHZRJvbQBZ", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1ob1WGGVRn6Cnzp7vIVcjZm3QRntwn9pz", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1cyIEVvT1zM116YutoAIQB7AfXNhu78sc", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1bFO0-iLCj3jZPExnzVPDfMNlOg4ckimb", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1tYUJ2OXO5xbujSDRsrbybYVyMGhwhqdM", type: "image" }
+{ url: "https://lh3.googleusercontent.com/d/1mnecSsj3w2kXpKHAW516TDqWV8fgaurz", type: "image" }
+
 
     ],
 
