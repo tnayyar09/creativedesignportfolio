@@ -23,17 +23,17 @@ const CATEGORIES = [
 		    { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
         ]
     },
-   // {
-      //  id: "social-media",
-      //  name: "Social Media",
-       // icon: "📱",
-       // subcategories: [
+    {
+        id: "social-media",
+        name: "Social Media",
+        icon: "📱",
+        subcategories: [
            // { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" }
-         //   { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" },
-          //  { id: "banner-ads", name: "Banner Ads", page: "pages/banner-ads.html" },
-          //  { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
-       // ]
-  //  },
+            { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" },
+            { id: "banner-ads", name: "Banner Ads", page: "pages/banner-ads.html" },
+            { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
+        ]
+    },
    // {
       //  id: "print-design",
       //  name: "Print Design",
@@ -106,6 +106,11 @@ const CATEGORIES = [
 
 const designData = {
     "website-ui": [
+        { 
+          url: "https://lh3.googleusercontent.com/d/1lIJll3uiB7PxTvVylXdsQjzTBMNBUgry", 
+            type: "image",
+            projectUrl: "#"  // ✅ Redirect URL
+       },
         { 
             url: "https://lh3.googleusercontent.com/d/1kkKQHtt1TJMH4tXaFq6LhwCmtlxIkWkr", 
             type: "image",
