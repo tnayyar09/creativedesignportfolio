@@ -206,7 +206,10 @@ const CREATIVE_IMAGES = {
     "social-media-posts": [
         { url: "https://lh3.googleusercontent.com/d/1Zp-gSeqfoZqw1VwifJQZI7QJGH4Xfcw8", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1T2nBMhyUne7baAHu5GRrj7fGQ8TmLNUg", type: "image" },
-	    { url: "https://lh3.googleusercontent.com/d/1-JcvCtTDYd8oxv4jxDK7HFeEqWcn8opN", type: "image" }
+	    { url: "https://lh3.googleusercontent.com/d/1-JcvCtTDYd8oxv4jxDK7HFeEqWcn8opN", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1y70_T9MGDKph-Y-nvllzynIE3rQhJ-lq", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1CxwlBZtgPcswBSu8NdIRDx0NUa_S3_SL", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1STgiirhJ7KMJfQ0dlCLzKjf9RRHHPjny", type: "image" }
 
     ],
 
