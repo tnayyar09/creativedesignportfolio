@@ -205,7 +205,8 @@ const CREATIVE_IMAGES = {
     // SOCIAL MEDIA
     "social-media-posts": [
         { url: "https://lh3.googleusercontent.com/d/1Zp-gSeqfoZqw1VwifJQZI7QJGH4Xfcw8", type: "image" },
-		        { url: "https://lh3.googleusercontent.com/d/1T2nBMhyUne7baAHu5GRrj7fGQ8TmLNUg", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/1T2nBMhyUne7baAHu5GRrj7fGQ8TmLNUg", type: "image" },
+	    { url: "https://lh3.googleusercontent.com/d/1-JcvCtTDYd8oxv4jxDK7HFeEqWcn8opN", type: "image" }
 
     ],
 
