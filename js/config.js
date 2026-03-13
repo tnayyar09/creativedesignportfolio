@@ -210,7 +210,8 @@ const CREATIVE_IMAGES = {
 		{ url: "https://lh3.googleusercontent.com/d/1y70_T9MGDKph-Y-nvllzynIE3rQhJ-lq", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1CxwlBZtgPcswBSu8NdIRDx0NUa_S3_SL", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1STgiirhJ7KMJfQ0dlCLzKjf9RRHHPjny", type: "image" },
-		{ url: "https://lh3.googleusercontent.com/d/1X7NZdl5zAfE2xXcgBIjpgObHMiJUf_Vs", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/1X7NZdl5zAfE2xXcgBIjpgObHMiJUf_Vs", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1Jo3_X_gB1Qz1lxRp8eGnZmi7r4uNCBOj", type: "image" }
 
     ],
 
