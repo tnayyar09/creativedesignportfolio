@@ -112,7 +112,7 @@ const designData = {
             projectUrl: "https://tnayyar09.github.io/my-html-project/Clinic-1.0.0/index.html"  // ✅ Redirect URL
        },
         { 
-            url: "https://lh3.googleusercontent.com/d/1kkKQHtt1TJMH4tXaFq6LhwCmtlxIkWkr", 
+            url: "https://lh3.googleusercontent.com/d/1GRH60EcZ-T31Wb4SdGXt74jXlXR83PUI", 
             type: "image",
             projectUrl: "https://tnayyar09.github.io/3drealweb/3d"
         },
@@ -122,7 +122,7 @@ const designData = {
             projectUrl: "https://tnayyar09.github.io/roccos/"
         },
         { 
-            url: "https://lh3.googleusercontent.com/d/1GRH60EcZ-T31Wb4SdGXt74jXlXR83PUI", 
+            url: "https://lh3.googleusercontent.com/d/17pyQraF87h5yqrINOV59jFTfQrxMT3fP", 
             type: "image",
             projectUrl: "https://tnayyar09.github.io/luxe3dwebsite/"
         }
