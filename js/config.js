@@ -204,15 +204,8 @@ const CREATIVE_IMAGES = {
 
     // SOCIAL MEDIA
     "social-media-posts": [
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_1", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_2", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_3", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_4", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_5", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_6", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_7", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_8", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_SM_9", type: "image" }
+        { url: "https://lh3.googleusercontent.com/d/1Zp-gSeqfoZqw1VwifJQZI7QJGH4Xfcw8", type: "image" },
+
     ],
 
     "story-designs": [
