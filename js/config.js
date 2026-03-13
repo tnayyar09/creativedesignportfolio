@@ -227,7 +227,7 @@ const CREATIVE_IMAGES = {
 		{ url: "https://lh3.googleusercontent.com/d/1OXOLHxeFnA_woCVMOyMIswryyI6YrDx3", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/12tCkDhfpLMNN9w9dBb7c-WwF2b4ilo1q", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1EIJ7ZR-0os7ksKmDOcdFO0mNek3YVIyF", type: "image" },
-		{ url: "https://lh3.googleusercontent.com/d/1t3FV04eVeTLpGifXazswR-CAKUnatXxL", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/1-GSaKi57_fhbs1yyRPo1TLd-VFaQlhF6", type: "image" }
 
     ],
 
