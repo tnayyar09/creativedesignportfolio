@@ -243,8 +243,10 @@ const CREATIVE_IMAGES = {
 		{ url: "https://lh3.googleusercontent.com/d/1-GSaKi57_fhbs1yyRPo1TLd-VFaQlhF6", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1kU4iW4Gf-rZL1H9kdtA8E8vIcLMbPX85", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1EbmAOepql3vEykO4BSPtLQbQY_JjPvsG", type: "image" },
-		{ url: "https://lh3.googleusercontent.com/d/1ZfP2ExwZc8P__IoJ7BOIt0IPeqQO1VRn", type: "image" }
-
+		{ url: "https://lh3.googleusercontent.com/d/1ZfP2ExwZc8P__IoJ7BOIt0IPeqQO1VRn", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1I7szx0NpWtWdWj-zVgJaSp2EHFG33FPc", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1d8bWTbis4USFj6MEHgV0d1uq81ST692k", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1zHW4JObQXwLshovB53WgrF9fuLBm95wf", type: "image" }
     ],
 
     "story-designs": [
