@@ -235,7 +235,7 @@ const CREATIVE_IMAGES = {
 		{ url: "https://lh3.googleusercontent.com/d/13e5gfB5NbMZPTGT1FARdEv3TzBTkKpjc", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1BJz5DbrfDNOEwsKY8jG2B5cXTcOU1RhE", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1jskgKE1wmTsWweaowN3jzH2LdsPt2Bj1", type: "image" },
-		{ url: "https://lh3.googleusercontent.com/d/10BOqfjVVlllDfcjQU59IBQXxi2-77Z0m", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1lsshSLL9uRdREejgLJ1ntqFQuViqqGVb", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1L9u7U13mcgggiEJdCxbPTTKosZy8V5VF", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1OXOLHxeFnA_woCVMOyMIswryyI6YrDx3", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/12tCkDhfpLMNN9w9dBb7c-WwF2b4ilo1q", type: "image" },
