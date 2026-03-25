@@ -286,10 +286,11 @@ const CREATIVE_IMAGES = {
     ],
 
     "catalogs": [
-       { url: "https://lh3.googleusercontent.com/d/1qQFfXEXdqDJ4KKipEVwYEc0IhsW11RRp", type: "image" },
-	   { url: "https://lh3.googleusercontent.com/d/1ehLH6kij1ll0xKREoUwanNzP94SKgd9c", type: "image" },
-	   { url: "https://lh3.googleusercontent.com/d/1247zvJSEOSzYX0-039iLILG3aE_gEXUF", type: "image" },
-	   { url: "https://lh3.googleusercontent.com/d/10oUy5czuwEg-hHPRHFqUDAmQ89MvS9-t", type: "image" }
+        { url: "https://lh3.googleusercontent.com/d/13zMhdk_-Q90cqlcKyOMtm_uEne9B69H9", type: "image" },
+        { url: "https://lh3.googleusercontent.com/d/1UzVv8Hab_qOXNfOEJbQX3WYqRUYvREo_", type: "image" },
+        { url: "https://lh3.googleusercontent.com/d/1lPQwf7B2QDXEKS3zXqFf6dxJOzP9HKm9", type: "image" },
+        { url: "https://lh3.googleusercontent.com/d/1qoH67GNhPazYdJu71zFLU__ptX2i41eN", type: "image" },
+        { url: "https://lh3.googleusercontent.com/d/1yLf1xI4bdBn2OxSrneKz4YgFluxyXGN1", type: "image" }
     ],
 
     "app-ui": [
