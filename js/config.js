@@ -34,17 +34,17 @@ const CATEGORIES = [
           //  { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
         ]
    },
-   // {
-      //  id: "print-design",
-      //  name: "Print Design",
-      //  icon: "🖨️",
-      //  subcategories: [
-      //      { id: "brochures", name: "Brochures", page: "pages/brochures.html" },
-      //      { id: "flyers", name: "Flyers", page: "pages/flyers.html" },
-      //      { id: "posters", name: "Posters", page: "pages/posters.html" },
-       //     { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" }
-       // ]
-   // },
+    {
+        id: "print-design",
+        name: "Print Design",
+        icon: "🖨️",
+        subcategories: [
+           // { id: "brochures", name: "Brochures", page: "pages/brochures.html" },
+            //{ id: "flyers", name: "Flyers", page: "pages/flyers.html" },
+           // { id: "posters", name: "Posters", page: "pages/posters.html" },
+            { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" }
+        ]
+    },
     {
         id: "ui-ux",
         name: "UI/UX Design",
@@ -285,7 +285,9 @@ const CREATIVE_IMAGES = {
     ],
 
     "catalogs": [
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_CAT_1", type: "image" }
+       { url: "https://lh3.googleusercontent.com/d/1qQFfXEXdqDJ4KKipEVwYEc0IhsW11RRp", type: "image" },
+	   { url: "https://lh3.googleusercontent.com/d/1ehLH6kij1ll0xKREoUwanNzP94SKgd9c", type: "image" },
+	   { url: "https://lh3.googleusercontent.com/d/1247zvJSEOSzYX0-039iLILG3aE_gEXUF", type: "image" }
     ],
 
     "app-ui": [
