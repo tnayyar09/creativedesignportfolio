@@ -288,7 +288,8 @@ const CREATIVE_IMAGES = {
     "catalogs": [
        { url: "https://lh3.googleusercontent.com/d/1qQFfXEXdqDJ4KKipEVwYEc0IhsW11RRp", type: "image" },
 	   { url: "https://lh3.googleusercontent.com/d/1ehLH6kij1ll0xKREoUwanNzP94SKgd9c", type: "image" },
-	   { url: "https://lh3.googleusercontent.com/d/1247zvJSEOSzYX0-039iLILG3aE_gEXUF", type: "image" }
+	   { url: "https://lh3.googleusercontent.com/d/1247zvJSEOSzYX0-039iLILG3aE_gEXUF", type: "image" },
+	   { url: "https://lh3.googleusercontent.com/d/10oUy5czuwEg-hHPRHFqUDAmQ89MvS9-t", type: "image" }
     ],
 
     "app-ui": [
