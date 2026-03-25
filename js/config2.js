@@ -137,6 +137,11 @@ const designData = {
             type: "image",
             projectUrl: "https://tnayyar09.github.io/immigration/"
         },
+						{ 
+            url: "https://lh3.googleusercontent.com/d/1KM_nMUOvhF44JC5oYI6XZXb-TWxuxnXU", 
+            type: "image",
+            projectUrl: "https://tnayyar09.github.io/property/"
+        },
 		{ 
             url: "https://lh3.googleusercontent.com/d/1qngTZDxinWXWf9j380WjZK_-qTRgTCN7", 
             type: "image",
