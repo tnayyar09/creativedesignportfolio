@@ -131,6 +131,12 @@ const designData = {
             type: "image",
             projectUrl: "https://tnayyar09.github.io/bakery/index.html"
         },
+
+				{ 
+            url: "https://lh3.googleusercontent.com/d/1VoFALqVtaBbCLDcXUKsycPAcwtW226W-", 
+            type: "image",
+            projectUrl: "https://tnayyar09.github.io/immigration/"
+        },
 		{ 
             url: "https://lh3.googleusercontent.com/d/1qngTZDxinWXWf9j380WjZK_-qTRgTCN7", 
             type: "image",
