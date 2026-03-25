@@ -20,6 +20,7 @@ const CATEGORIES = [
            // { id: "brand-identity", name: "Brand Identity", page: "pages/brand-identity.html" },
             //{ id: "business-cards", name: "Business Cards", page: "pages/business-cards.html" },
             //{ id: "letterhead", name: "Letterhead", page: "pages/letterhead.html" },
+		   { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" },
 		    { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
         ]
     },
@@ -34,17 +35,17 @@ const CATEGORIES = [
           //  { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
         ]
    },
-    {
-        id: "print-design",
-        name: "Print Design",
-        icon: "🖨️",
-        subcategories: [
+   // {
+      //  id: "print-design",
+       // name: "Print Design",
+      //  icon: "🖨️",
+       // subcategories: [
            // { id: "brochures", name: "Brochures", page: "pages/brochures.html" },
             //{ id: "flyers", name: "Flyers", page: "pages/flyers.html" },
            // { id: "posters", name: "Posters", page: "pages/posters.html" },
-            { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" }
-        ]
-    },
+          // { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" }
+       // ]
+   // },
     {
         id: "ui-ux",
         name: "UI/UX Design",
