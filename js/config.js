@@ -294,7 +294,8 @@ const CREATIVE_IMAGES = {
         { url: "https://lh3.googleusercontent.com/d/1UzVv8Hab_qOXNfOEJbQX3WYqRUYvREo_", type: "image" },
         { url: "https://lh3.googleusercontent.com/d/1lPQwf7B2QDXEKS3zXqFf6dxJOzP9HKm9", type: "image" },
         { url: "https://lh3.googleusercontent.com/d/1qoH67GNhPazYdJu71zFLU__ptX2i41eN", type: "image" },
-        { url: "https://lh3.googleusercontent.com/d/1yLf1xI4bdBn2OxSrneKz4YgFluxyXGN1", type: "image" }
+        { url: "https://lh3.googleusercontent.com/d/1yLf1xI4bdBn2OxSrneKz4YgFluxyXGN1", type: "image" },
+		 { url: "https://lh3.googleusercontent.com/d/1x7VrGIsFkVnMpGOD7lhZdzAAVkhhE-3t", type: "image" }
     ],
 
     "app-ui": [
