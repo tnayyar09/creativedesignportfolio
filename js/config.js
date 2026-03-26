@@ -21,7 +21,8 @@ const CATEGORIES = [
             //{ id: "business-cards", name: "Business Cards", page: "pages/business-cards.html" },
             //{ id: "letterhead", name: "Letterhead", page: "pages/letterhead.html" },
 		   { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" },
-		    { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
+		   { id: "posters", name: "Posters", page: "pages/posters.html" },
+		   { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
         ]
     },
     {
@@ -280,9 +281,12 @@ const CREATIVE_IMAGES = {
     ],
 
     "posters": [
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_POSTER_1", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_POSTER_2", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_POSTER_3", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/1AgT_NDtOMmWK1rdtW2AzsqQEthX_stWi", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1GFQaaj0uFR8hAQk1ExSOCqpXGbX8SEg8", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1eQsuFPb-4eN4XansJKwFLVWPhy54CgTD", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1gqKea5DMFuAuYLxphrg9MzdqgOmavjAE", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1jQJ8dlvCwcruSrPboFrg5CbQH3RMDvhI", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1mBGv_ZNNFB5LNWHvW50m7pHeUzKkIoGS", type: "image" }
     ],
 
     "catalogs": [
