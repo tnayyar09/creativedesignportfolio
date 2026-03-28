@@ -295,7 +295,13 @@ const CREATIVE_IMAGES = {
         { url: "https://lh3.googleusercontent.com/d/1lPQwf7B2QDXEKS3zXqFf6dxJOzP9HKm9", type: "image" },
         { url: "https://lh3.googleusercontent.com/d/1qoH67GNhPazYdJu71zFLU__ptX2i41eN", type: "image" },
         { url: "https://lh3.googleusercontent.com/d/1yLf1xI4bdBn2OxSrneKz4YgFluxyXGN1", type: "image" },
-		 { url: "https://lh3.googleusercontent.com/d/1x7VrGIsFkVnMpGOD7lhZdzAAVkhhE-3t", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/1x7VrGIsFkVnMpGOD7lhZdzAAVkhhE-3t", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/11BFeahjTTaanUqiX4uKYvtprppaWPEo4", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/17K59jiEMkqtHnjyQzMX0szZK9jzAL9fe", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1LT10BP-l659v0DE_UzkwE59l7iNq1SlJ", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1OaAMMfGB4m35HM7A21O1NgA8geczxrUo", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1ia9wz0zgVH3ejgF94C1poYttohS34ICh", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1t4StN28yEQM11ngpPoOjhLjaOildXX1T", type: "image" }
     ],
 
     "app-ui": [
