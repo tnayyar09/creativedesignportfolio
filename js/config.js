@@ -384,7 +384,10 @@ const CREATIVE_IMAGES = {
 { url: "https://lh3.googleusercontent.com/d/1pgbnCRJfDUxVw_TMkKoLPtrRaKDFjG8F", type: "image" },
 { url: "https://lh3.googleusercontent.com/d/1AaoHrj98tgxZMiHvj_2WDxJ_-AeN3iCk", type: "image" },
 { url: "https://lh3.googleusercontent.com/d/1SIy_l2L-j0iOL2dxBnNNytv8NFEcyT50", type: "image" },
-{ url: "https://lh3.googleusercontent.com/d/1bhhaAE0Oj8-mPgczYw-wYASm4miZlnVt", type: "image" }
+{ url: "https://lh3.googleusercontent.com/d/1bhhaAE0Oj8-mPgczYw-wYASm4miZlnVt", type: "image" },
+{ url: "https://lh3.googleusercontent.com/d/11nCAfzSW1dg9AltNnEU7rKhv9-2X1zC4", type: "image" },
+{ url: "https://lh3.googleusercontent.com/d/1bSiKdWSM-NYOy2xLc7gF7tACTzzxmV4F", type: "image" }
+		
     ],
 
     "kids-tshirts-designs": [
