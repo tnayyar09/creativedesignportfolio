@@ -31,7 +31,7 @@ const CATEGORIES = [
         icon: "📱",
         subcategories: [
             { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" }
-         //   { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" },
+            { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" },
           //  { id: "banner-ads", name: "Banner Ads", page: "pages/banner-ads.html" },
           //  { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
         ]
@@ -258,9 +258,20 @@ const CREATIVE_IMAGES = {
     ],
 
     "story-designs": [
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_STORY_1", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_STORY_2", type: "image" },
-        { url: "https://drive.google.com/uc?export=view&id=REPLACE_STORY_3", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/102K5tNpBOIY9Phf2NVmWoDSNihJCMzY6", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/12Kga9OVLCIMSyPuCL0pe8oJgI2IDgXxX", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/12oeNw3FGSVxD2wtlI88z9HRbsj0l87B0", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/18GQTaj68CjVyQW9d_lkgF0zN-P82j82E", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1EdoFe1Xu54NeIf4Q_DNF29KdPM8IlsGE", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1FSq4ObbDe6BU00aspmy9PVBD7ojLKEdc", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1QKG9LQKqZsgK8Gompc4C0UibpElmVdE6", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1Sb23DrrR-bHEpQUuEQxTdOfGLKv-vwsC", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1_uLYoJ94VwAfrAJNZEGb_4yK9L5EVHez", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1gZOYbzQ5EOajPZj8YxQMYWNVVgxFvGoY", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1hJwupSgWQP_OK792feoGcio3GBHLu6ju", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1jVn_Hh2EI1MfsONzp3s_lXT0YD1rMq1A", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/1sEvYdil9vSrZVQM-5ZeoKB5HI7JwNk_P", type: "image" }
+
     ],
 
     "banner-ads": [
