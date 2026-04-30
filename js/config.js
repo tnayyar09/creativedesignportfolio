@@ -260,7 +260,7 @@ const CREATIVE_IMAGES = {
     ],
 
     "story-designs": [
-		
+		{ url: "https://lh3.googleusercontent.com/d/1sEvYdil9vSrZVQM-5ZeoKB5HI7JwNk_P", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/16ehtbg-h4hyYAviQZyDueI6bflT1I9gL", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/166dpLmTlMGfoPgiwUmhdNojBQDdtKBBr", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1KicQSSp0AzOWAtpYbssqQU4e0g-laMEK", type: "image" },
@@ -274,8 +274,8 @@ const CREATIVE_IMAGES = {
 		{ url: "https://lh3.googleusercontent.com/d/1FSq4ObbDe6BU00aspmy9PVBD7ojLKEdc", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1QKG9LQKqZsgK8Gompc4C0UibpElmVdE6", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1Sb23DrrR-bHEpQUuEQxTdOfGLKv-vwsC", type: "image" },
-		{ url: "https://lh3.googleusercontent.com/d/1jVn_Hh2EI1MfsONzp3s_lXT0YD1rMq1A", type: "image" },
-		{ url: "https://lh3.googleusercontent.com/d/1sEvYdil9vSrZVQM-5ZeoKB5HI7JwNk_P", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/1jVn_Hh2EI1MfsONzp3s_lXT0YD1rMq1A", type: "image" }
+
 
 		
 
