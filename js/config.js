@@ -30,8 +30,8 @@ const CATEGORIES = [
         name: "Social Media",
         icon: "📱",
         subcategories: [
-            { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" }
-            { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" },
+            { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" },
+            { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" }
           //  { id: "banner-ads", name: "Banner Ads", page: "pages/banner-ads.html" },
           //  { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
         ]
