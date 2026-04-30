@@ -254,7 +254,9 @@ const CREATIVE_IMAGES = {
 		{ url: "https://lh3.googleusercontent.com/d/1ZfP2ExwZc8P__IoJ7BOIt0IPeqQO1VRn", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1I7szx0NpWtWdWj-zVgJaSp2EHFG33FPc", type: "image" },
 		{ url: "https://lh3.googleusercontent.com/d/1d8bWTbis4USFj6MEHgV0d1uq81ST692k", type: "image" },
-		{ url: "https://lh3.googleusercontent.com/d/1zHW4JObQXwLshovB53WgrF9fuLBm95wf", type: "image" }
+		{ url: "https://lh3.googleusercontent.com/d/1zHW4JObQXwLshovB53WgrF9fuLBm95wf", type: "image" },
+		{ url: "https://lh3.googleusercontent.com/d/16ehtbg-h4hyYAviQZyDueI6bflT1I9gL", type: "image" }
+		
     ],
 
     "story-designs": [
