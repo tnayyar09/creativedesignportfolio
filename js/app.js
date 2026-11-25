@@ -224,8 +224,8 @@ function injectGridStyles() {
     const st = document.createElement('style');
     st.id = 'gridExtraStyles';
     st.textContent = `
-    .cat-website-ui .gallery-item { aspect-ratio: 16 / 10; overflow: hidden; }
-    .cat-website-ui .gallery-item img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .cat-website-ui .gallery-item { aspect-ratio: 16 / 9 !important; height: auto !important; min-height: 0 !important; overflow: hidden; }
+    .cat-website-ui .gallery-item img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top center !important; }
     `;
     document.head.appendChild(st);
 }
