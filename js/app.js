@@ -172,7 +172,7 @@ function initGrid() {
 
     images.forEach((item, index) => {
         if (item.type === 'reel') {
-            // Instagram Reel: cover image dikhao, click par Instagram naye tab mein khule
+            // Instagram Reel: cover image dikhao, click par seedha Instagram naye tab mein khule
             // thumb: Drive link ya apne project ka local path (jaise "images/reel-1.jpg")
             // thumbDriveId: Drive par jo video/image hai uska ID (download ki zaroorat nahi)
             const thumbSrc = item.thumbDriveId
@@ -190,9 +190,10 @@ function initGrid() {
                            title="Instagram Reel preview"
                            style="position:absolute;top:0;left:0;border:0;width:400px;height:711px;transform-origin:0 0;pointer-events:none;background:#fff;"></iframe>
                    <div style="position:absolute;inset:0;z-index:2;"></div>`;
+            // FIX: reel hamesha seedha Instagram par redirect hogi (newTab flag ki zaroorat nahi)
             gridHTML += `
                 <div class="gallery-item video-item reel-item"
-                     onclick="${item.newTab ? `window.open('${item.url}', '_blank', 'noopener')` : `openLightbox(${index}, '${categoryId}')`}"
+                     onclick="window.open('${item.url}', '_blank', 'noopener')"
                      data-index="${index}"
                      style="background:linear-gradient(160deg,#833ab4,#fd1d1d,#fcb045);cursor:pointer;">
                     ${cover}
@@ -252,6 +253,12 @@ function fitReelPreviews() {
         f.style.height = (h / scale) + 'px';
         f.style.transform = 'scale(' + scale + ')';
     });
+}
+
+// Instagram reel ka embed URL (jab thumbnail nahi diya ho)
+function getReelEmbedUrl(url) {
+    const clean = url.split('?')[0].replace(/\/?$/, '/');
+    return clean + 'embed';
 }
 
 // Grid ke liye chhota (fast) image, lightbox mein full image
