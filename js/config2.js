@@ -54,7 +54,7 @@ const CATEGORIES = [
 // CREATIVE IMAGES DATA
 // ============================================
 
-const designData = {
+const CREATIVE_IMAGES = {
     "website-ui": [
         { 
           url: "https://lh3.googleusercontent.com/d/1mIHPe25pv2EIWmJUeMG---Sw8cLzcrHj", 
