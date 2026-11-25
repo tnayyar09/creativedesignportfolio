@@ -210,7 +210,7 @@ function getVideoThumbnail(videoUrl) {
     // Extract file ID from Google Drive URL
     const match = videoUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
     if (match) {
-        return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w400`;
+        return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w800`;
     }
     // Fallback placeholder
     return 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%231a1a2e%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23666%22 font-size=%2240%22 x=%22150%22 y=%22210%22%3E🎬%3C/text%3E%3C/svg%3E';
