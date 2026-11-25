@@ -37,7 +37,7 @@ const CATEGORIES = [
         ]
     }
 
-    /* ------------------------------------------------
+   ------------------------------------------------
        OPTIONAL CATEGORIES (add a comma after the block
        above, then paste the block you want here)
     ------------------------------------------------
