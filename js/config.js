@@ -11,19 +11,19 @@ const SITE_CONFIG = {
 };
 
 const CATEGORIES = [
-    {
-        id: "branding",
-        name: "Branding",
-        icon: "🎨",
-        subcategories: [
+  //  {
+     //   id: "branding",
+      //  name: "Branding",
+       // icon: "🎨",
+      //  subcategories: [
             //{ id: "logo-design", name: "Logo Design", page: "pages/logo-design.html" },
            // { id: "brand-identity", name: "Brand Identity", page: "pages/brand-identity.html" },
             //{ id: "business-cards", name: "Business Cards", page: "pages/business-cards.html" },
             //{ id: "letterhead", name: "Letterhead", page: "pages/letterhead.html" },
 		  // { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" },
 		  // { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
-        ]
-    },
+       // ]
+  //  },
     {
         id: "social-media",
         name: "Social Media Creatives",
