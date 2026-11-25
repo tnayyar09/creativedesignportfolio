@@ -35,7 +35,7 @@ const CATEGORIES = [
         subcategories: [
             { id: "video-editing", name: "Video Editing Samples", page: "pages/video-ads.html" }
         ]
-    },
+    }
 
     /* ------------------------------------------------
        OPTIONAL CATEGORIES (add a comma after the block
