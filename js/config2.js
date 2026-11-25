@@ -58,11 +58,11 @@ const CATEGORIES = [
     },
     {
        id: "video",
-        name: "Video & Motion",
+        name: "Video Editing Samples",
         icon: "🎬",
         subcategories: [
         //    { id: "motion-graphics", name: "Motion Graphics", page: "pages/motion-graphics.html" },
-           { id: "video-ads", name: "Garments Video Ads", page: "pages/video-ads.html" }
+           { id: "video-editing", name: "Video Editing Samples", page: "pages/video-ads.html" }
           // { id: "reels", name: "Reels", page: "pages/reels.html" },
           // { id: "animations", name: "Animations", page: "pages/animations.html" }
        ]
