@@ -357,7 +357,6 @@ const CREATIVE_IMAGES = {
     ],
 
     "video-editing": [
-[
   // Cafe Videos
   { url: "https://drive.google.com/file/d/1b2P0GphEFj4PJOXAE-Vijrcc65_lIBeR/preview", type: "video", name: "cafe-1.mp4" },
   { url: "https://drive.google.com/file/d/1sak3bAx8AsryorAuilzryAz-Uds0cb8F/preview", type: "video", name: "cafe-2.mp4" },
@@ -393,7 +392,6 @@ const CREATIVE_IMAGES = {
   { url: "https://drive.google.com/file/d/1VhiYWDXi27e_-Mq2anaIKBNDar11veQl/preview", type: "video", name: "Travel-1.mp4" },
   { url: "https://drive.google.com/file/d/1O6uSm5ZB1-mruSy5WPd4dbRZ2AXv-QkD/preview", type: "video", name: "Travel-2.mp4" },
   { url: "https://drive.google.com/file/d/1po0p8c_obrt-ahSm60HDiIgwZ-qx507s/preview", type: "video", name: "Travel-3.mp4" }
-]
     ],
 
     "reels": [
