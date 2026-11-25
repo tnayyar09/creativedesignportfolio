@@ -302,9 +302,33 @@ const CREATIVE_IMAGES = {
         { url: "https://drive.google.com/file/d/REPLACE_MG_VIDEO_1/preview", type: "video" },
         { url: "https://drive.google.com/uc?export=view&id=REPLACE_MG_THUMB_1", type: "image" }
     ],
+	
+	
 		  "video-editing": [
-  { type: "reel", url: "https://www.instagram.com/p/DgKH5cTI_XV/", thumbDriveId: "1iSDBsfaV3jgqF4jhqFal5QXUcVONHoMY" }
+        { type: "reel", url: "https://www.instagram.com/p/DgKUjAXOkuy/", thumbDriveId: "1Oiewq6v2uhG7AW-ZI6dGQUE4ti46XgKM" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKU0zROzDn/", thumbDriveId: "1bCdAXyXdmmnsa0zkIQ9YehQ12W52Kln" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKVFmnuOdF/", thumbDriveId: "1IgsRAR4VpLGv7OjDeJHwmhTNntahGpwZ" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKVT82OTr8/", thumbDriveId: "1sJycBaxoMCy3iAKwOIEXDEj3yRui48LN" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKViYaOVxV/", thumbDriveId: "1hODboi_auVzZ43azPBOWu9uuTE4Es4cM" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKVyj0OP4h/", thumbDriveId: "1Y2TKpzehNnHBfDvJCgXHMNmrI8oVLupX" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKWD05OIBH/", thumbDriveId: "1iVuACUgMBIftCokfdlhEMlbPDoMVGGh5" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKWPu8Ot2z/", thumbDriveId: "13r1Ra8JXLskqwp1aEWjCD3rRAEgssg29" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKWjjlOfrV/", thumbDriveId: "1sjSAqpk4pH6F1NrzIZhRV96ZcXHppz_2" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKW17kuY39/", thumbDriveId: "1Dz15wWuOFOwR3AqKeV4y-NwZyvOJbxSi" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKXKI4uRV4/", thumbDriveId: "1vpSqPSv9Z88WeSBGFG5rwNLNsQBSe-Hu" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKXrrvOObQ/", thumbDriveId: "1plArfMWRukgf-w5m45v9k-MgvPNsWuYe" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKX9eXuicF/", thumbDriveId: "1umd-BNB-t1P_U-QKnjc81-dVVRGa9n5F" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKYKxYuzgJ/", thumbDriveId: "1EKeisrCnCRlOmGncOR4IPhELlOF31v-d" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKYZF3OyBx/", thumbDriveId: "1EATJYaEKd06_w8ww-cXZmatP9Xe6cWiD" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKYwJuu_8E/", thumbDriveId: "1ThTcQFI3VGNYQUutUaEcZiHHrtfm0D-g" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKZBvwuCYG/", thumbDriveId: "1GLxyfM1f6n_tyw6ICPgxHLWqP-Rzunki" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKZSl6OWG2/", thumbDriveId: "1p2QnsZg9TtAS-uiOkuDfJc8z1k99whZy" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKZi9luDqU/", thumbDriveId: "1l_eoW5_aAg6jekycjbGagyzcHkxRedoK" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKZyJauKda/", thumbDriveId: "15MJUawdXVjxtYelCfDvM4uzrYOpfCGeL" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKaF6AujAU/", thumbDriveId: "1znpDR2o9-TaNbhuBtHo99OjMVDsW6Xw4" }
     ],
+	
+	
 	    "website-ui": [
         { 
           url: "https://lh3.googleusercontent.com/d/1mIHPe25pv2EIWmJUeMG---Sw8cLzcrHj", 
