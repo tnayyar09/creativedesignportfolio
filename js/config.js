@@ -68,7 +68,7 @@ const CATEGORIES = [
           // { id: "reels", name: "Reels", page: "pages/reels.html" },
           // { id: "animations", name: "Animations", page: "pages/animations.html" }
        ]
-    },
+    }
 
     // ============================================
     // 🆕 NEW CATEGORIES ADDED
