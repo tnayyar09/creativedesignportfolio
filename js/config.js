@@ -303,7 +303,7 @@ const CREATIVE_IMAGES = {
         { url: "https://drive.google.com/uc?export=view&id=REPLACE_MG_THUMB_1", type: "image" }
     ],
 		  "video-editing": [
-  { type: "reel", url: "https://www.instagram.com/reel/DgAQcvnMjbN/", thumbDriveId: "1AuRQ8tDA89e-MUziCXTfBa6UmGYZ87fr" }
+  { type: "reel", url: "https://www.instagram.com/p/DgKH5cTI_XV/", thumbDriveId: "1iSDBsfaV3jgqF4jhqFal5QXUcVONHoMY" }
     ],
 	    "website-ui": [
         { 
