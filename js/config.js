@@ -303,6 +303,9 @@ const CREATIVE_IMAGES = {
         { url: "https://drive.google.com/uc?export=view&id=REPLACE_MG_THUMB_1", type: "image" }
     ],
 		  "video-editing": [
+  // Instagram Reel example (uncomment + apply your link/thumb):
+  // { type: "reel", url: "https://www.instagram.com/reel/XXXXXXXXXXX/", thumb: "https://lh3.googleusercontent.com/d/DRIVE_IMAGE_ID" },
+
   // Cafe Videos
   { url: "https://drive.google.com/file/d/1b2P0GphEFj4PJOXAE-Vijrcc65_lIBeR/preview", type: "video", name: "cafe-1.mp4" },
   { url: "https://drive.google.com/file/d/1sak3bAx8AsryorAuilzryAz-Uds0cb8F/preview", type: "video", name: "cafe-2.mp4" },
