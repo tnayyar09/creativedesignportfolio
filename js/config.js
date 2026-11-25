@@ -20,7 +20,9 @@ const CATEGORIES = [
            // { id: "brand-identity", name: "Brand Identity", page: "pages/brand-identity.html" },
             //{ id: "business-cards", name: "Business Cards", page: "pages/business-cards.html" },
             //{ id: "letterhead", name: "Letterhead", page: "pages/letterhead.html" },
-		   // { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
+		   { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" },
+		   { id: "posters", name: "Posters", page: "pages/posters.html" },
+		   { id: "garments-poster-designs", name: "Garments Poster Designs", page: "pages/garments-poster-designs.html" }
         ]
     },
     {
@@ -28,21 +30,21 @@ const CATEGORIES = [
         name: "Social Media",
         icon: "📱",
         subcategories: [
-            { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" }
-           // { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" },
+            { id: "social-media-posts", name: "Posts", page: "pages/social-media-posts.html" },
+            { id: "story-designs", name: "Story Designs", page: "pages/story-designs.html" }
           //  { id: "banner-ads", name: "Banner Ads", page: "pages/banner-ads.html" },
           //  { id: "carousel-posts", name: "Carousel Posts", page: "pages/carousel-posts.html" }
         ]
-    },
+   },
    // {
       //  id: "print-design",
-      //  name: "Print Design",
+       // name: "Print Design",
       //  icon: "🖨️",
-      //  subcategories: [
-      //      { id: "brochures", name: "Brochures", page: "pages/brochures.html" },
-      //      { id: "flyers", name: "Flyers", page: "pages/flyers.html" },
-      //      { id: "posters", name: "Posters", page: "pages/posters.html" },
-       //     { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" }
+       // subcategories: [
+           // { id: "brochures", name: "Brochures", page: "pages/brochures.html" },
+            //{ id: "flyers", name: "Flyers", page: "pages/flyers.html" },
+           // { id: "posters", name: "Posters", page: "pages/posters.html" },
+          // { id: "catalogs", name: "Catalogs", page: "pages/catalogs.html" }
        // ]
    // },
     {
@@ -58,11 +60,11 @@ const CATEGORIES = [
     },
     {
        id: "video",
-        name: "Video Editing Samples",
+        name: "Video & Motion",
         icon: "🎬",
         subcategories: [
-		      { id: "video-editing", name: "Video Editing Samples", page: "pages/video-ads.html" }
         //    { id: "motion-graphics", name: "Motion Graphics", page: "pages/motion-graphics.html" },
+           { id: "video-editing", name: "Video Editing Samples", page: "pages/video-ads.html" }
           // { id: "reels", name: "Reels", page: "pages/reels.html" },
           // { id: "animations", name: "Animations", page: "pages/animations.html" }
        ]
@@ -72,30 +74,30 @@ const CATEGORIES = [
     // 🆕 NEW CATEGORIES ADDED
     // ============================================
     {
-       // id: "kids-collection",
-       // name: "Kids Collection",
-       // icon: "👶",
-       // subcategories: [
-        //    { id: "kids-photoshoots", name: "Kids Photoshoots", page: "pages/kids-photoshoots.html" },
-        //    { id: "kids-tshirts-designs", name: "Kids T-Shirts Designs", page: "pages/kids-tshirts-designs.html" }
+        id: "kids-collection",
+        name: "Kids Collection",
+        icon: "👶",
+        subcategories: [
+            { id: "kids-photoshoots", name: "Kids Photoshoots", page: "pages/kids-photoshoots.html" },
+            { id: "kids-tshirts-designs", name: "Kids T-Shirts Designs", page: "pages/kids-tshirts-designs.html" }
         ]
     },
     {
-      //  id: "mens-collection",
-      //  name: "Men's Collection",
-      //  icon: "👔",
-      //  subcategories: [
-       //     { id: "mens-tshirts-designs", name: "Men's T-Shirts Designs", page: "pages/mens-tshirts-designs.html" },
-           // { id: "men-photoshoots", name: "Men Photoshoots", page: "pages/men-photoshoots.html" }
+        id: "mens-collection",
+        name: "Men's Collection",
+        icon: "👔",
+        subcategories: [
+            { id: "mens-tshirts-designs", name: "Men's T-Shirts Designs", page: "pages/mens-tshirts-designs.html" },
+            { id: "men-photoshoots", name: "Men Photoshoots", page: "pages/men-photoshoots.html" }
         ]
     },
     {
-       // id: "ladies-collection",
-       // name: "Ladies Collection",
-       // icon: "👗",
-       // subcategories: [
-          //  { id: "ladies-kurtis-designs", name: "Ladies Kurtis Designs", page: "pages/ladies-kurtis-designs.html" },
-          //  { id: "ladies-suits-designs", name: "Ladies Suits Designs", page: "pages/ladies-suits-designs.html" }
+        id: "ladies-collection",
+        name: "Ladies Collection",
+        icon: "👗",
+        subcategories: [
+            { id: "ladies-kurtis-designs", name: "Ladies Kurtis Designs", page: "pages/ladies-kurtis-designs.html" },
+            { id: "ladies-suits-designs", name: "Ladies Suits Designs", page: "pages/ladies-suits-designs.html" }
         ]
     }
 ];
