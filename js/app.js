@@ -173,14 +173,26 @@ function initGrid() {
     images.forEach((item, index) => {
         if (item.type === 'reel') {
             // Instagram Reel: cover image dikhao, click par Instagram naye tab mein khule
-            const cover = item.thumb
-                ? `<img src="${getThumbUrl(item.thumb)}" alt="Instagram Reel" loading="lazy"
+            // thumb: Drive link ya apne project ka local path (jaise "images/reel-1.jpg")
+            // thumbDriveId: Drive par jo video/image hai uska ID (download ki zaroorat nahi)
+            const thumbSrc = item.thumbDriveId
+                ? `https://drive.google.com/thumbnail?id=${item.thumbDriveId}&sz=w800`
+                : item.thumb
+                    ? (/^(https?:|data:)/.test(item.thumb) ? getThumbUrl(item.thumb) : getPathPrefix() + item.thumb)
+                    : '';
+            const hasThumb = !!thumbSrc;
+            // thumbnail nahi diya => Instagram ka embed hi preview (cover) ban jata hai
+            const cover = hasThumb
+                ? `<img src="${thumbSrc}" alt="Instagram Reel" loading="lazy"
                         onload="this.classList.add('loaded')"
                         onerror="this.style.display='none'">`
-                : '';
+                : `<iframe class="reel-preview" src="${getReelEmbedUrl(item.url)}" loading="lazy" scrolling="no" tabindex="-1"
+                           title="Instagram Reel preview"
+                           style="position:absolute;top:0;left:0;border:0;width:400px;height:711px;transform-origin:0 0;pointer-events:none;background:#fff;"></iframe>
+                   <div style="position:absolute;inset:0;z-index:2;"></div>`;
             gridHTML += `
                 <div class="gallery-item video-item reel-item"
-                     onclick="window.open('${item.url}', '_blank', 'noopener')"
+                     onclick="${item.newTab ? `window.open('${item.url}', '_blank', 'noopener')` : `openLightbox(${index}, '${categoryId}')`}"
                      data-index="${index}"
                      style="background:linear-gradient(160deg,#833ab4,#fd1d1d,#fcb045);cursor:pointer;">
                     ${cover}
@@ -224,6 +236,22 @@ function initGrid() {
     });
 
     gridContainer.innerHTML = gridHTML;
+    fitReelPreviews();
+    window.addEventListener('resize', fitReelPreviews);
+}
+
+// Reel preview iframe ko card ki width ke hisaab se scale karta hai
+function fitReelPreviews() {
+    document.querySelectorAll('.reel-item').forEach(card => {
+        const f = card.querySelector('.reel-preview');
+        if (!f) return;
+        const w = card.clientWidth || 300;
+        const h = card.clientHeight || (w * 16 / 9);
+        const scale = w / 400;
+        f.style.width = '400px';
+        f.style.height = (h / scale) + 'px';
+        f.style.transform = 'scale(' + scale + ')';
+    });
 }
 
 // Grid ke liye chhota (fast) image, lightbox mein full image
