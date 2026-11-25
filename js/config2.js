@@ -66,38 +66,38 @@ const CATEGORIES = [
           // { id: "reels", name: "Reels", page: "pages/reels.html" },
           // { id: "animations", name: "Animations", page: "pages/animations.html" }
        ]
-    },
+    }
 
     // ============================================
     // 🆕 NEW CATEGORIES ADDED
     // ============================================
-    {
+  //  {
        // id: "kids-collection",
        // name: "Kids Collection",
        // icon: "👶",
        // subcategories: [
         //    { id: "kids-photoshoots", name: "Kids Photoshoots", page: "pages/kids-photoshoots.html" },
         //    { id: "kids-tshirts-designs", name: "Kids T-Shirts Designs", page: "pages/kids-tshirts-designs.html" }
-        ]
-    },
-    {
+      //  ]
+ //   },
+  //  {
       //  id: "mens-collection",
       //  name: "Men's Collection",
       //  icon: "👔",
       //  subcategories: [
        //     { id: "mens-tshirts-designs", name: "Men's T-Shirts Designs", page: "pages/mens-tshirts-designs.html" },
            // { id: "men-photoshoots", name: "Men Photoshoots", page: "pages/men-photoshoots.html" }
-        ]
-    },
-    {
+     //   ]
+//    },
+//    {
        // id: "ladies-collection",
        // name: "Ladies Collection",
        // icon: "👗",
        // subcategories: [
           //  { id: "ladies-kurtis-designs", name: "Ladies Kurtis Designs", page: "pages/ladies-kurtis-designs.html" },
           //  { id: "ladies-suits-designs", name: "Ladies Suits Designs", page: "pages/ladies-suits-designs.html" }
-        ]
-    }
+      //  ]
+  //  }
 ];
 
 // ============================================
