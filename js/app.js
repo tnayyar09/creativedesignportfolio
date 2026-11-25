@@ -291,7 +291,7 @@ function renderGallery() {
     if (!galleryGrid) return;
 
     const category = galleryGrid.getAttribute('data-category');
-    const designs = designData[category];
+   const designs = CREATIVE_IMAGES[category];
 
     if (!designs || designs.length === 0) {
         galleryGrid.innerHTML = `
