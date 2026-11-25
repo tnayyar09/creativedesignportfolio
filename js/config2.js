@@ -37,7 +37,7 @@ const CATEGORIES = [
     },
     {
        id: "video",
-        name: "Video Editing Samples",
+        name: "Video & Motion",
         icon: "🎬",
         subcategories: [
             { id: "video-editing", name: "Video Editing Samples", page: "pages/video-ads.html" }
@@ -47,6 +47,7 @@ const CATEGORIES = [
        ]
     }
 ];
+
 
 
 // ============================================
