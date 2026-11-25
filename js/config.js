@@ -582,6 +582,9 @@ const CREATIVE_IMAGES = {
     ]
 };
 
+// Alias: video page ka data-category "video-ads" ho ya "video-editing", dono chalenge
+CREATIVE_IMAGES["video-ads"] = CREATIVE_IMAGES["video-editing"];
+
 // Helper functions
 function getGoogleDriveDirectLink(fileId) {
     return `https://drive.google.com/uc?export=view&id=${fileId}`;
