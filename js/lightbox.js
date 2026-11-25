@@ -11,11 +11,13 @@
     const css = `
     .lightbox-content.is-video {
         position: relative;
-        width: min(94vw, 1000px);
-        height: 78vh;
-        height: min(78dvh, 620px);
+        aspect-ratio: 9 / 16;          /* Instagram Reels */
+        height: 86vh;
+        height: min(86dvh, 820px);
+        width: auto;
+        max-width: 100vw;
         background: #000;
-        border-radius: 10px;
+        border-radius: 12px;
         overflow: hidden;
     }
     .lightbox-content.is-video iframe {
@@ -35,12 +37,15 @@
         width: 64px; height: 64px;
         z-index: 2;
     }
+    /* grid: video cards 9:16 */
+    .gallery-item.video-item { aspect-ratio: 9 / 16; overflow: hidden; }
+    .gallery-item.video-item img { width: 100%; height: 100%; object-fit: cover; }
+
     @media (max-width: 768px) {
         .lightbox-content.is-video {
-            width: 100vw;
-            height: 72vh;
-            height: 72dvh;
-            border-radius: 0;
+            height: 80vh;
+            height: 80dvh;             /* width auto = height * 9/16 */
+            border-radius: 10px;
         }
         /* arrows neeche, taaki video ke upar na aayein */
         .lightbox-nav {
