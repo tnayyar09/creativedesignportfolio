@@ -306,7 +306,7 @@ const CREATIVE_IMAGES = {
 	
 		  "video-editing": [
         { type: "reel", url: "https://www.instagram.com/p/DgKUjAXOkuy/", thumbDriveId: "1Oiewq6v2uhG7AW-ZI6dGQUE4ti46XgKM" },
-		{ type: "reel", url: "https://www.instagram.com/p/DgKU0zROzDn/", thumbDriveId: "1bCdAXyXdmmnsa0zkIQ9YehQ12W52Kln" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgKU0zROzDn/", thumbDriveId: "1bCdAXyXdmmnsa0zkIQ9YehQ12W52Klny" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgKVFmnuOdF/", thumbDriveId: "1IgsRAR4VpLGv7OjDeJHwmhTNntahGpwZ" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgKVT82OTr8/", thumbDriveId: "1sJycBaxoMCy3iAKwOIEXDEj3yRui48LN" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgKViYaOVxV/", thumbDriveId: "1hODboi_auVzZ43azPBOWu9uuTE4Es4cM" },
