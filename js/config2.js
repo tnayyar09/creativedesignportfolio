@@ -47,7 +47,7 @@ const CATEGORIES = [
    // },
     {
         id: "ui-ux",
-        name: "UI/UX Design",
+        name: "Website Designs",
         icon: "💻",
         subcategories: [
             { id: "website-ui", name: "Website UI", page: "pages/website-ui.html" }
