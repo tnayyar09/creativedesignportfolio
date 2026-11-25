@@ -38,8 +38,8 @@
         z-index: 2;
     }
     /* grid: video cards 9:16 */
-    .gallery-item.video-item { aspect-ratio: 9 / 16; overflow: hidden; }
-    .gallery-item.video-item img { width: 100%; height: 100%; object-fit: cover; }
+    .gallery-item.video-item { aspect-ratio: 9 / 16 !important; height: auto !important; min-height: 0 !important; overflow: hidden; }
+    .gallery-item.video-item img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
 
     @media (max-width: 768px) {
         .lightbox-content.is-video {
