@@ -29,7 +29,7 @@ const CATEGORIES = [
         name: "Website Designs",
         icon: "💻",
         subcategories: [
-            { id: "website-ui", name: "Website UI", page: "pages/website-ui.html" }
+            { id: "website-ui", name: "Website Designs", page: "pages/website-ui.html" }
            // { id: "app-ui", name: "App UI", page: "pages/app-ui.html" },
            // { id: "landing-pages", name: "Landing Pages", page: "pages/landing-pages.html" },
            // { id: "dashboards", name: "Dashboards", page: "pages/dashboards.html" }
@@ -37,7 +37,7 @@ const CATEGORIES = [
     },
     {
        id: "video",
-        name: "Video & Motion",
+        name: "Video Editing Samples",
         icon: "🎬",
         subcategories: [
             { id: "video-editing", name: "Video Editing Samples", page: "pages/video-ads.html" }
