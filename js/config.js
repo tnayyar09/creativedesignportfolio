@@ -303,9 +303,7 @@ const CREATIVE_IMAGES = {
         { url: "https://drive.google.com/uc?export=view&id=REPLACE_MG_THUMB_1", type: "image" }
     ],
 		  "video-editing": [
-  // Instagram Reels (lightbox mein embed hoti hain)
-  // thumbDriveId = Drive file ID (is Reel ka original video/image, jo Drive mein hai) | ya thumb: "images/reel-1.jpg" | newTab: true => embed ki jagah naye tab mein khule
-  { type: "reel", url: "https://www.instagram.com/reel/DgAQcvnMjbN/" /*, thumbDriveId: "DRIVE_FILE_ID" */ },
+  { type: "reel", url: "https://www.instagram.com/reel/DgAQcvnMjbN/", thumbDriveId: "1AuRQ8tDA89e-MUziCXTfBa6UmGYZ87fr" },
 
   // Cafe Videos
   { url: "https://drive.google.com/file/d/1b2P0GphEFj4PJOXAE-Vijrcc65_lIBeR/preview", type: "video", name: "cafe-1.mp4" },
