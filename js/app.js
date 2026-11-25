@@ -31,6 +31,7 @@ function initPageLoader() {
 // ============================================
 function initScrollEffects() {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -154,6 +155,11 @@ function initGrid() {
     const categoryId = gridContainer.getAttribute('data-category') || 'home';
     const images = CREATIVE_IMAGES[categoryId] || [];
 
+    // Website-style cards (with "Visit Site" button) for website pages
+    const useCards = gridContainer.getAttribute('data-layout') === 'cards'
+        || categoryId === 'website-ui'
+        || images.some(i => i.projectUrl);
+
     if (images.length === 0) {
         gridContainer.innerHTML = `
             <div class="empty-state">
@@ -165,6 +171,11 @@ function initGrid() {
         return;
     }
 
+    if (useCards) {
+        renderGallery();
+        return;
+    }
+
     let gridHTML = '';
 
     images.forEach((item, index) => {
@@ -172,11 +183,13 @@ function initGrid() {
             // Video thumbnail
             gridHTML += `
                 <div class="gallery-item video-item" 
-                     onclick="openLightbox(${index}, '${categoryId}')"
+                     onclick="openVideoModal(${index}, '${categoryId}')"
+                     title="${item.name || 'Video'}"
                      data-index="${index}">
                     <div class="skeleton"></div>
                     <img src="${getVideoThumbnail(item.url)}" 
-                         alt="Creative Design" 
+                         referrerpolicy="no-referrer"
+                         alt="${item.name || 'Video'}" 
                          loading="lazy"
                          onload="this.classList.add('loaded')"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%231a1a2e%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23666%22 font-size=%2240%22 x=%22150%22 y=%22210%22%3E🎬%3C/text%3E%3C/svg%3E'; this.classList.add('loaded')">
@@ -216,82 +229,65 @@ function getVideoThumbnail(videoUrl) {
 }
 
 // ============================================
-//  GALLERY RENDERING - MAIN FUNCTION
+// VIDEO PLAYER MODAL (Google Drive /preview iframe)
 // ============================================
+function openVideoModal(index, categoryId) {
+    const list = CREATIVE_IMAGES[categoryId] || [];
+    const item = list[index];
+    if (!item) return;
 
-// ============================================
-//  PAGE LOADER
-// ============================================
-window.addEventListener('load', () => {
-    const loader = document.querySelector('.page-loader');
-    if (loader) {
-        setTimeout(() => {
-            loader.style.opacity = '0';
-            loader.style.visibility = 'hidden';
-            setTimeout(() => loader.remove(), 500);
-        }, 800);
-    }
+    closeVideoModal();
+
+    const modal = document.createElement('div');
+    modal.id = 'videoModal';
+    modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99999;display:flex;align-items:center;justify-content:center;padding:16px;';
+
+    const box = document.createElement('div');
+    box.style.cssText = 'position:relative;width:min(92vw,900px);height:min(80vh,560px);background:#000;border-radius:12px;overflow:hidden;';
+
+    const iframe = document.createElement('iframe');
+    iframe.src = item.url;
+    iframe.setAttribute('allow', 'autoplay; encrypted-media; fullscreen');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.style.cssText = 'width:100%;height:100%;border:0;';
+
+    const close = document.createElement('button');
+    close.innerHTML = '&times;';
+    close.setAttribute('aria-label', 'Close');
+    close.style.cssText = 'position:absolute;top:10px;right:14px;z-index:2;width:40px;height:40px;border:0;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;font-size:28px;line-height:1;cursor:pointer;';
+    close.onclick = closeVideoModal;
+
+    box.appendChild(iframe);
+    box.appendChild(close);
+    modal.appendChild(box);
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeVideoModal();
+    });
+
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    if (modal) modal.remove();
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeVideoModal();
 });
 
 // ============================================
-//  NAVIGATION SETUP
+// WEBSITE CARDS (image/video/instagram + Visit Site button)
 // ============================================
-function setupNavigation() {
-    const navMenu = document.getElementById('navMenu');
-    const hamburger = document.getElementById('hamburger');
-    const overlay = document.getElementById('mobileOverlay');
-
-    if (!navMenu || typeof navMenuItems === 'undefined') return;
-
-    navMenuItems.forEach(item => {
-        const li = document.createElement('li');
-        li.className = 'nav-item';
-
-        if (item.dropdown) {
-            li.classList.add('dropdown');
-            li.innerHTML = `
-                <a href="#" class="nav-link dropdown-toggle">
-                    ${item.label} ▾
-                </a>
-                <ul class="dropdown-menu">
-                    ${item.dropdown.map(sub => `
-                        <li><a href="${sub.href}" class="dropdown-link">${sub.label}</a></li>
-                    `).join('')}
-                </ul>
-            `;
-            const toggle = li.querySelector('.dropdown-toggle');
-            toggle.addEventListener('click', (e) => {
-                e.preventDefault();
-                li.classList.toggle('active');
-            });
-        } else {
-            li.innerHTML = `<a href="${item.href}" class="nav-link">${item.label}</a>`;
-        }
-        navMenu.appendChild(li);
-    });
-
-    if (hamburger) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            if (overlay) overlay.classList.toggle('active');
-        });
-    }
-
-    if (overlay) {
-        overlay.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-    }
-}
 function renderGallery() {
     const galleryGrid = document.getElementById('galleryGrid');
     if (!galleryGrid) return;
 
     const category = galleryGrid.getAttribute('data-category');
     const designs = CREATIVE_IMAGES[category];
+    galleryGrid.innerHTML = '';
 
     if (!designs || designs.length === 0) {
         galleryGrid.innerHTML = `
@@ -418,11 +414,3 @@ function renderGallery() {
         }
     });
 }
-
-// ============================================
-//  INIT
-// ============================================
-document.addEventListener('DOMContentLoaded', () => {
-    setupNavigation();
-    renderGallery();
-});
