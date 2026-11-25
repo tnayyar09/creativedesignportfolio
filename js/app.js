@@ -154,6 +154,8 @@ function initGrid() {
 
     const categoryId = gridContainer.getAttribute('data-category') || 'home';
     const images = CREATIVE_IMAGES[categoryId] || [];
+    gridContainer.classList.add('cat-' + categoryId);
+    injectGridStyles();
 
     if (images.length === 0) {
         gridContainer.innerHTML = `
@@ -186,12 +188,15 @@ function initGrid() {
             `;
         } else {
             // Image
+            const clickAction = item.projectUrl
+                ? `window.open('${item.projectUrl}', '_blank')`
+                : `openLightbox(${index}, '${categoryId}')`;
             gridHTML += `
                 <div class="gallery-item" 
-                     onclick="openLightbox(${index}, '${categoryId}')"
+                     onclick="${clickAction}"
                      data-index="${index}">
                     <div class="skeleton"></div>
-                    <img src="${item.url}" 
+                    <img src="${getThumbUrl(item.url)}" 
                          alt="Creative Design" 
                          loading="lazy"
                          onload="this.classList.add('loaded')"
@@ -203,6 +208,26 @@ function initGrid() {
     });
 
     gridContainer.innerHTML = gridHTML;
+}
+
+// Grid ke liye chhota (fast) image, lightbox mein full image
+function getThumbUrl(url, width = 700) {
+    if (url.includes('lh3.googleusercontent.com/d/') && !url.includes('=')) {
+        return url + '=w' + width;
+    }
+    return url;
+}
+
+// Website screenshots ke liye grid style
+function injectGridStyles() {
+    if (document.getElementById('gridExtraStyles')) return;
+    const st = document.createElement('style');
+    st.id = 'gridExtraStyles';
+    st.textContent = `
+    .cat-website-ui .gallery-item { aspect-ratio: 16 / 10; overflow: hidden; }
+    .cat-website-ui .gallery-item img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    `;
+    document.head.appendChild(st);
 }
 
 // Get video thumbnail from Google Drive
