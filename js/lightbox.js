@@ -75,6 +75,13 @@ function openLightbox(index, categoryId) {
 
     if (currentLightboxImages.length === 0) return;
 
+    // FIX: Instagram reel kabhi lightbox mein nahi khulni chahiye, seedha Instagram par jaye
+    const clicked = currentLightboxImages[index];
+    if (clicked && clicked.type === 'reel') {
+        window.open(clicked.url, '_blank', 'noopener');
+        return;
+    }
+
     const overlay = document.getElementById('lightboxOverlay');
     if (!overlay) createLightboxElement();
 
