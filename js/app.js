@@ -171,7 +171,23 @@ function initGrid() {
     let gridHTML = '';
 
     images.forEach((item, index) => {
-        if (item.type === 'video') {
+        if (item.type === 'reel') {
+            // Instagram Reel: cover image dikhao, click par Instagram naye tab mein khule
+            const cover = item.thumb
+                ? `<img src="${getThumbUrl(item.thumb)}" alt="Instagram Reel" loading="lazy"
+                        onload="this.classList.add('loaded')"
+                        onerror="this.style.display='none'">`
+                : '';
+            gridHTML += `
+                <div class="gallery-item video-item reel-item"
+                     onclick="window.open('${item.url}', '_blank', 'noopener')"
+                     data-index="${index}"
+                     style="background:linear-gradient(160deg,#833ab4,#fd1d1d,#fcb045);cursor:pointer;">
+                    ${cover}
+                    <div class="zoom-icon">▶</div>
+                </div>
+            `;
+        } else if (item.type === 'video') {
             // Video thumbnail
             gridHTML += `
                 <div class="gallery-item video-item" 
