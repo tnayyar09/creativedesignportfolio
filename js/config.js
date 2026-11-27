@@ -306,6 +306,9 @@ const CREATIVE_IMAGES = {
 	
 		  "video-editing": [
 		{ type: "reel", url: "https://www.instagram.com/p/DgO8AanO4sq/", thumbDriveId: "1nrzLVLcfbR1qJG_efmifd6G_4BSKmUJg" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgPCL2XORyI/", thumbDriveId: "1gx6B0PiTlbbqa_1_yENdpKBGFlMGHI-l" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgPFpnfu-L-/", thumbDriveId: "1Xg53dTUUtq2FgmtKkDPkBAKr5fydRDRl" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgPFN6hO_NH/", thumbDriveId: "197Y2THvJr7CBqNZ9xMvHIF5gUul-aWrQ" },
         { type: "reel", url: "https://www.instagram.com/p/DgKUjAXOkuy/", thumbDriveId: "1Oiewq6v2uhG7AW-ZI6dGQUE4ti46XgKM" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgKU0zROzDn/", thumbDriveId: "1bCdAXyXdmmnsa0zkIQ9YehQ12W52Klny" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgKVFmnuOdF/", thumbDriveId: "1IgsRAR4VpLGv7OjDeJHwmhTNntahGpwZ" },
