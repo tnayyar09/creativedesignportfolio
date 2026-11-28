@@ -302,9 +302,12 @@ const CREATIVE_IMAGES = {
         { url: "https://drive.google.com/file/d/REPLACE_MG_VIDEO_1/preview", type: "video" },
         { url: "https://drive.google.com/uc?export=view&id=REPLACE_MG_THUMB_1", type: "image" }
     ],
-	
-	
+
 		  "video-editing": [
+		{ type: "reel", url: "https://www.instagram.com/p/DgR8oS6uksR/", thumbDriveId: "1fvXWYpmUExX6r0sPj45Fuhfi3m89XczO" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgR6m6zu9Ni/", thumbDriveId: "1ziOdpyQ9uC3LyFQEXatECh64L-QvSyrA" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgR6xS5OpyQ/", thumbDriveId: "1LOwN1bewG0PJqIYHmVBHYs0uaE3YXO8V" },
+		{ type: "reel", url: "https://www.instagram.com/p/DgR68xDua2Z/", thumbDriveId: "18cKvmtG6GqyNql6nDrKhYiyf4FSM9Pax" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgO8AanO4sq/", thumbDriveId: "1nrzLVLcfbR1qJG_efmifd6G_4BSKmUJg" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgPFN6hO_NH/", thumbDriveId: "197Y2THvJr7CBqNZ9xMvHIF5gUul-aWrQ" },
 		{ type: "reel", url: "https://www.instagram.com/p/DgPCL2XORyI/", thumbDriveId: "1gx6B0PiTlbbqa_1_yENdpKBGFlMGHI-l" },
